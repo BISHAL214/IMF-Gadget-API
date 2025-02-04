@@ -1,0 +1,43 @@
+const codenames = [
+  "The Nightingale",
+  "The Kraken",
+  "The Falcon",
+  "The Shadow",
+  "The Phoenix",
+  "The Raven",
+  "The Wolf",
+  "The Dragon",
+  "The Lion",
+  "The Tiger",
+  "The Bear",
+  "The Eagle",
+  "The Hawk",
+  "The Fox",
+  "The Viper",
+  "The Cobra",
+  "The Shark",
+  "The Whale",
+  "The Dolphin",
+  "The Panther",
+  "The Cheetah",
+  "The Leopard",
+  "The Jaguar",
+  "The Elephant",
+  "The Rhino",
+  "The Hippo",
+  "The Bison",
+  "The Crocodile",
+  "The Alligator",
+  "The Giraffe",
+  "The Zebra",
+  "The Hyena",
+  "The Gorilla",
+  "The Chimpanzee",
+  "The Orangutan",
+  "The Baboon",
+];
+export const generateCodename = () =>
+  codenames[Math.floor(Math.random() * codenames.length)];
+
+export const generateConfirmationCode = () =>
+  Math.floor(100000 + Math.random() * 900000).toString();
